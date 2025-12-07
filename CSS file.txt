@@ -1,0 +1,85 @@
+﻿/* -------------------------------------------------------------------
+   1. CORE CONTAINER STYLES (MAKING IT A LANDING PAGE)
+------------------------------------------------------------------- */
+
+/* This targets the main chat container wrapper */
+.bpw-layout {
+    /* Full width and height of the parent element (the <div> you embed it in) */
+    width: 100% !important; 
+    height: 100% !important;
+    max-width: none !important; /* Removes the default max width */
+    max-height: none !important; /* Removes the default max height */
+    box-shadow: none !important; /* Removes the chat bubble shadow */
+    border-radius: 0 !important; /* Removes rounded corners for a seamless look */
+    border: none !important; /* Removes any default border */
+}
+
+/* Ensure the webchat content fills the space */
+.bpw-widget-container {
+    width: 100%;
+    height: 100%;
+    /* Override position fixed if necessary for embedding */
+    position: initial !important; 
+}
+
+
+/* -------------------------------------------------------------------
+   2. BRANDING AND COLOR SCHEME (PROFESSIONAL LEGAL THEME)
+------------------------------------------------------------------- */
+
+/* Header Bar - Using a Deep, Professional Green/Black */
+.bpw-header-container {
+    background-color: #1A3E38; /* Deep Forest Green (Professional look) */
+    color: white; /* White text for contrast */
+    border-bottom: 3px solid #FFC72C; /* Thin strip of Gold/Yellow (Kenya national colors accent) */
+    font-family: 'Inter', sans-serif; /* Clean, modern font */
+    font-weight: 600;
+}
+
+/* Chat Messages from the Bot (LexKenya) */
+.bpw-from-bot .bpw-chat-bubble {
+    background-color: #E6F3EE; /* Very light, clean green/gray */
+    color: #333333; /* Dark text for readability */
+    border-radius: 12px 12px 12px 3px; /* Softer corners */
+    max-width: 90%;
+}
+
+/* Chat Messages from the User (The Law Student) */
+.bpw-from-user .bpw-chat-bubble {
+    background-color: #005A32; /* Stronger, institutional green */
+    color: white;
+    border-radius: 12px 12px 3px 12px; /* Softer corners */
+    max-width: 90%;
+}
+
+
+/* -------------------------------------------------------------------
+   3. INPUT COMPOSER (The Search Bar Area)
+------------------------------------------------------------------- */
+
+/* The entire message input area */
+.bpw-composer-container {
+    padding: 15px 20px;
+    border-top: 1px solid #E0E0E0; /* Subtle line above the input */
+}
+
+/* The actual text input field */
+.bpw-composer-input {
+    border-radius: 25px; /* Pill-shaped input field */
+    border: 1px solid #CCCCCC;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+/* Send Button */
+.bpw-send-button {
+    color: #005A32; /* Match the primary brand color */
+}
+
+/* Optional: Hide the "Powered by Botpress" footer for a cleaner look */
+/* Note: Depending on your Botpress plan, this may not be permitted */
+.bpw-powered-by {
+    display: none !important;
+}
+
+
