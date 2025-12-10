@@ -1,36 +1,46 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Kenya Law Assistant - Legal Research Portal</title>
 
-  <!-- Link the stylesheet (ensure styles.css exists on main) -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Reset margins and ensure full height/width */
+    html, body {
+        height: 100%; /* REQUIRED for full height */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* Hides browser scrollbars */
+        box-sizing: border-box;
+    }
+    /* Ensure the target container fills the viewport */
+    #kenya-law-assistant-container {
+        width: 100vw;   /* 100% of the Viewport Width */
+        height: 100vh;  /* 100% of the Viewport Height */
+    }
+  </style>
 
-  <!-- Botpress webchat injector (must load before init) -->
-  <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js" defer></script>
-  <!-- Your bot configuration / pre-built bot file (ensure reachable) -->
-  <script src="https://files.bpcontent.cloud/2025/12/07/04/20251207043245-LECH8PCK.js" defer></script>
-  <!-- Initialization script that waits for the injector to be ready -->
-  <script src="webchat-init.js" defer></script>
-</head>
+  </head>
 <body>
-  <!-- Full-screen container for the portal / widget -->
   <div id="kenya-law-assistant-container"
        role="application"
        aria-label="Kenya Law Assistant"
        aria-live="polite">
-    <!-- Fallback visible content for non-JS or slow environments -->
     <div class="fallback">
-      <p>The Kenya Law Assistant requires JavaScript to run. If nothing appears, <a href="#" id="open-chat-link">open the chat</a>.</p>
+      <p>The Kenya Law Assistant requires JavaScript to run...</p>
     </div>
   </div>
 
   <noscript>
     <div style="padding:1rem;background:#ffefc1;color:#222;">
-      This site requires JavaScript to load the Kenya Law Assistant. Please enable JavaScript or contact support.
+      This site requires JavaScript to load the Kenya Law Assistant. Please enable JavaScript.
     </div>
   </noscript>
+
+  <script src="https://cdn.botpress.cloud/webchat/v3.4/inject.js" defer></script>
+  <script src="https://files.bpcontent.cloud/2025/12/07/04/20251207043245-LECH8PCK.js" defer></script>
+
 </body>
 </html>
